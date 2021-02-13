@@ -1,0 +1,206 @@
+a {
+    text-decoration: none !important;
+    color: inherit !important
+}
+
+a:hover {
+    text-decoration: underline !important;
+    color: inherit !important
+}
+
+.thead-dark a {
+    color: #ffffff !important;
+}
+
+footer {
+    font-size: small;
+    position: fixed !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    background-color: #343a40 !important;
+    color: #ffffff !important;
+    text-align: center !important;
+}
+
+input, footer input {
+    font-size: large;
+}
+
+.navbar-dark {
+    color: #ffffff;
+}
+
+input[type=submit] {
+    width: 100%;
+    /*background-color: #4CAF50;*/
+    background-color: #0069d9;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    /*background-color: #45a049;*/
+    background-color: #0056b3;
+}
+
+.dropdown-menu.show {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+a.dropdown-item:hover {
+    background-color: #343a40;
+}
+
+.navbar {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    padding: 2px !important;
+    z-index: +1;
+}
+
+.container-fluid {
+    margin-top: 3em;
+}
+
+.table-hover tr:hover td {
+    background-color: #c8c7c7;
+    opacity: .6;
+}
+
+h4 {
+    color: #0056b3;
+}
+
+th textarea:hover {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?1isyqe');
+    src: url('../fonts/icomoon.eot?1isyqe#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?1isyqe') format('truetype'),
+    url('../fonts/icomoon.woff?1isyqe') format('woff'),
+    url('../fonts/icomoon.svg?1isyqe#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon', sans-serif !important;
+    /*speak: never;*/
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-champion_icon:before {
+    content: "\e900";
+}
+
+.icon-menu_icon:before {
+    content: "\e901";
+}
+
+.icon-podium_icon:before {
+    content: "\e902";
+}
+
+.icon-reward:before {
+    content: "\e903";
+}
+
+.icon-technology_icon:before {
+    content: "\e904";
+}
+
+.btn-info:focus, .btn:focus {
+    box-shadow: none !important;
+}
+
+.emLink {
+    color: #0056b3 !important;
+}
+
+#more p {
+    margin-bottom: 0;
+    font-size: small;
+}
+
+#email {
+    display: none;
+}
+
+#home_logo:hover {
+    text-decoration: none !important;
+    color: #0056b3 !important;
+}
+
+.navbar .icon-technology_icon {
+    font-size: large;
+}
+
+#search {
+    padding: 2px;
+}
+
+#newprice #price {
+    margin-left: 10px;
+}
+
+.background {
+    background-image: url("../img/IMG_20160519_134242421-scaled-1-1024x576.jpg");
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .2;
+    z-index: -1;
+}
+
+#allItems .background {
+    background-image: url("../img/bgd/bands/thee_headcoats.jpg");
+}
+
+#forSale .background {
+    background-image: url("../img/bgd/bands/thee_oh_sees.jpg");
+}
+
+#sold .background {
+    background-image: url("../img/bgd/bands/damned.jpg");
+}
+
+#artists .background {
+    background-image: url("../img/bgd/bands/white_stripes.jpg");
+}
+
+#orders .background {
+    background-image: url("../img/bgd/bands/king_gizzard.jpg");
+}
+
+#labels .background {
+    background-image: url("../img/bgd/bands/jsbx.jpg");
+}
+
+#countries .background {
+    background-image: url("../img/bgd/bands/mummies.jpeg");
+}
+
+#index {
+    margin-bottom: 2em;
+}
