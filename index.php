@@ -131,6 +131,8 @@ require_once './dal/orders/selectLatestOrders.php';
                                          target="_blank">my Discogs shop</a> or <a class="emLink"
                                                                                    href="mailto:tlize@tristanlize.fr">send
                     me a message</a></p>
+            <p>interested in dev stuff ? pay a visit to <a class="emLink" href="https://github.com/tlize/myDiscogsSellerInventory"
+                                                           target="_blank">my GitHub repo</a></p>
         </div>
 
         <?php

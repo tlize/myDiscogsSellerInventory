@@ -3,7 +3,7 @@
 $username_post = $_POST['username'];
 $password_post = $_POST['password'];
 
-require './dal/users/selectUserPassword.php';
+require_once './dal/users/selectUserPassword.php';
 
 if ($arr == null) {
 
@@ -19,9 +19,10 @@ if ($arr == null) {
         $auth_user = $username_post;
         $_SESSION['auth_user'] = $auth_user;
 
-        require 'bll/checkAdmin.php';
+        require_once 'dal/users/selectAllFromUser.php';
+        $admin = $user['admin'];
 
-        if (check_admin($auth_user)) {
+        if ($admin == 1) {
             $super_admin = $auth_user;
             $_SESSION['super_admin'] = $super_admin;
         }

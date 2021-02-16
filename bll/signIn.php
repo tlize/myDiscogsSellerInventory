@@ -26,7 +26,7 @@ function register()
             if ($password == $password_confirm) {
                 $password = password_hash($password, PASSWORD_DEFAULT);
 
-                $db_usernames = [];;
+                $db_usernames = [];
                 $users = [];
                 require './dal/users/selectDbUsernames.php';
                 if (!$users) {
