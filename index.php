@@ -28,6 +28,7 @@ require_once './dal/orders/selectLatestOrders.php';
         <br>
         <?php
         foreach ($arrAllO as $row) {
+            $order_date = $row['order_date'];
             ?>
             <h5><a href="orderItems.php?order_num=<?php echo $row['order_num'] ?>" title="see order detail">
                     <?php echo $row['order_num']; ?></a> by <?php
@@ -39,9 +40,24 @@ require_once './dal/orders/selectLatestOrders.php';
 
                 ?>
                 (<?php echo '<a href="countryDetails.php?country=' . $row['country'] . '">' . $row['country'] . '</a>' ?>
-                ) on <?php echo $row['order_date'] ?><?php
+                ) on <?php echo $order_date ?><?php
+
+                $nb_items = $row['items_nb'];
                 if (isset($super_admin)) {
-                    echo ' : ' . $row['total_amount'] . ' €';
+                    if ($nb_items == 1) {
+                        echo ' : 1 item, ' . $row['total_amount'] . '€';
+                    }
+                    else {
+                        echo ' : ' . $row['items_nb'] . ' items, ' . $row['total_amount'] . '€';
+                    }
+                }
+                else {
+                    if ($nb_items == 1) {
+                        echo ' : 1 item';
+                    }
+                    else {
+                        echo ' : ' . $row['items_nb'] . ' items';
+                    }
                 }
                 ?></h5>
             <?php
