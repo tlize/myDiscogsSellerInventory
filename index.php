@@ -46,16 +46,13 @@ require_once './dal/orders/selectLatestOrders.php';
                 if (isset($super_admin)) {
                     if ($nb_items == 1) {
                         echo ' : 1 item, ' . $row['total_amount'] . '€';
-                    }
-                    else {
+                    } else {
                         echo ' : ' . $row['items_nb'] . ' items, ' . $row['total_amount'] . '€';
                     }
-                }
-                else {
+                } else {
                     if ($nb_items == 1) {
                         echo ' : 1 item';
-                    }
-                    else {
+                    } else {
                         echo ' : ' . $row['items_nb'] . ' items';
                     }
                 }
@@ -143,12 +140,13 @@ require_once './dal/orders/selectLatestOrders.php';
             <p>please <a class="emLink" href="./register.php">register</a> or <a class="emLink"
                                                                                  href="./login.php">login</a> if you
                 want to see more</p>
-            <p>and feel free to visit <a class="emLink" href="https://www.discogs.com/seller/tlize/profile"
-                                         target="_blank">my Discogs shop</a> or <a class="emLink"
+            <p>and feel free to visit my <a class="emLink" href="https://www.discogs.com/seller/tlize/profile"
+                                            target="_blank">Discogs shop</a> or <a class="emLink"
                                                                                    href="mailto:tlize@tristanlize.fr">send
                     me a message</a></p>
-            <p>interested in dev stuff ? pay a visit to <a class="emLink" href="https://github.com/tlize/myDiscogsSellerInventory"
-                                                           target="_blank">my GitHub repo</a></p>
+            <p>interested in dev stuff ? pay a visit to my <a class="emLink"
+                                                              href="https://github.com/tlize/myDiscogsSellerInventory"
+                                                              target="_blank">GitHub repo</a></p>
         </div>
 
         <?php

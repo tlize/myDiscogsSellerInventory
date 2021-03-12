@@ -31,7 +31,7 @@ $rowNb = count($rowAll);
             } ?>
         </h4>
         <form id="setSold" action="confirmManyUpdates.php" method="POST">
-            <table class="table table-hover table-striped sortable" style="margin-bottom: 3.5em">
+            <table class="table table-hover table-striped sortable">
                 <thead class="thead-dark">
                 <tr>
                     <?php

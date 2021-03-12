@@ -1,83 +1,3 @@
-a, h5 a,table a, .navbar a, footer a {
-    text-decoration: none;
-    color: inherit;
-}
-
-a:hover, h5 a:hover, table a:hover, .navbar a:hover, footer a:hover {
-    text-decoration: underline;
-    color: inherit;
-}
-
-.thead-dark a {
-    color: #ffffff;
-}
-
-footer {
-    font-size: small;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #343a40;
-    color: #ffffff;
-    text-align: center;
-}
-
-input, footer input {
-    font-size: large;
-}
-
-.navbar-dark {
-    color: #ffffff;
-}
-
-input[type=submit] {
-    width: 100%;
-    background-color: #0069d9;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #0056b3;
-}
-
-.dropdown-menu.show {
-    background-color: #343a40;
-    color: #ffffff;
-}
-
-a.dropdown-item:hover {
-    background-color: #343a40;
-}
-
-nav {
-    position: fixed !important;
-    top: 0 !important;
-    width: 100% !important;
-    padding: 2px !important;
-    z-index: +1;
-}
-
-.container-fluid {
-    margin-top: 3em;
-}
-
-.table-hover tr:hover td {
-    background-color: #c8c7c7;
-    opacity: .6;
-}
-
-h4 {
-    color: #0056b3;
-}
-
-th textarea:hover {
-    cursor: pointer;
-}
-
 @font-face {
     font-family: 'icomoon';
     src: url('../fonts/icomoon.eot?1isyqe');
@@ -90,6 +10,60 @@ th textarea:hover {
     font-display: block;
 }
 
+
+/* specificity : 0.0.1*/
+h4 {
+    color: #0056b3;
+}
+
+/* specificity : 0.0.1*/
+footer {
+    font-size: small;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/* specificity : 0.0.1, 0.0.2*/
+input, footer input {
+    font-size: large;
+}
+
+
+/* specificity : 0.1.0*/
+.navbar-dark {
+    color: #ffffff;
+}
+
+/* specificity : 0.1.0*/
+.container-fluid {
+    margin-top: 3em;
+}
+
+/* specificity : 0.1.0*/
+.emLink {
+    color: #0056b3;
+}
+
+/* specificity : 0.1.0*/
+.background {
+    background-image: url("../img/IMG_20160519_134242421-scaled-1-1024x576.jpg");
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .2;
+    z-index: -1;
+}
+
+/* specificity : 0.1.0, 0.1.0*/
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon', sans-serif;
@@ -105,84 +79,172 @@ th textarea:hover {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* specificity : 0.1.0*/
 .icon-technology_icon:before {
     content: "\e904";
 }
 
+
+/* specificity : 0.0.1, 0.0.2, 0.0.2, 0.0.2, 0.1.1*/
+a, h5 a, table a, footer a, .navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* specificity : 0.1.1*/
+.thead-dark a {
+    color: #ffffff;
+}
+
+/* specificity : 0.1.1*/
+input[type=submit] {
+    width: 100%;
+    background-color: #0069d9;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* specificity : 0.1.2*/
+th textarea:hover {
+    cursor: pointer;
+}
+
+
+/* specificity : 0.2.0*/
+.dropdown-menu.show {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+/* specificity : 0.2.0, 0.2.0*/
 .btn-info:focus, .btn:focus {
     box-shadow: none;
 }
 
-.emLink {
-    color: #0056b3;
+
+/* specificity : 0.1.1, 0.1.2, 0.1.2, 0.1.2, 0.2.1*/
+a:hover, h5 a:hover, table a:hover, footer a:hover, .navbar a:hover {
+    text-decoration: underline;
+    color: inherit;
 }
 
+/* specificity : 0.2.1*/
+input[type=submit]:hover {
+    background-color: #0056b3;
+}
+
+/* specificity : 0.2.1*/
+a.dropdown-item:hover {
+    background-color: #343a40;
+}
+
+
+/* specificity : 0.2.2*/
+.table-hover tr:hover td {
+    background-color: #c8c7c7;
+    opacity: .6;
+}
+
+
+/* specificity : 1.0.0*/
+#tl_nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2px;
+    z-index: +1;
+}
+
+/* specificity : 1.0.0*/
+#email {
+    display: none;
+}
+
+/* specificity : 1.0.0*/
+#search {
+    padding: 2px;
+}
+
+/* specificity : 1.0.0*/
+#index {
+    margin-bottom: 2em;
+}
+
+/* specificity : 1.0.0, 1.0.0*/
+#newprice, #price {
+    margin-left: 10px;
+}
+
+
+/* specificity : 1.0.1*/
 #more p {
     margin-bottom: 0;
     font-size: small;
 }
 
-#email {
-    display: none;
+/* specificity : 1.0.1*/
+#setSold table {
+    margin-bottom: 3.5em;
 }
 
+
+/* specificity : 1.0.2*/
+#allUsers p span {
+    font-weight: bold;
+}
+
+
+/* specificity : 1.1.0*/
 #home_logo:hover {
     text-decoration: none;
     color: #0056b3;
 }
 
-.navbar .icon-technology_icon {
-    font-size: large;
-}
-
-#search {
-    padding: 2px;
-}
-
-#newprice #price {
-    margin-left: 10px;
-}
-
-.background {
-    background-image: url("../img/IMG_20160519_134242421-scaled-1-1024x576.jpg");
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: .2;
-    z-index: -1;
-}
-
+/* specificity : 1.1.0*/
 #allItems .background {
     background-image: url("../img/bgd/bands/thee_headcoats.jpg");
 }
 
+/* specificity : 1.1.0*/
 #forSale .background {
     background-image: url("../img/bgd/bands/thee_oh_sees.jpg");
 }
 
+/* specificity : 1.1.0*/
 #sold .background {
     background-image: url("../img/bgd/bands/damned.jpg");
 }
 
+/* specificity : 1.1.0*/
 #artists .background {
     background-image: url("../img/bgd/bands/white_stripes.jpg");
 }
 
+/* specificity : 1.1.0*/
 #orders .background {
     background-image: url("../img/bgd/bands/king_gizzard.jpg");
 }
 
+/* specificity : 1.1.0*/
 #labels .background {
     background-image: url("../img/bgd/bands/jsbx.jpg");
 }
 
+/* specificity : 1.1.0*/
 #countries .background {
     background-image: url("../img/bgd/bands/mummies.jpeg");
 }
 
-#index {
-    margin-bottom: 2em;
+/* specificity : 1.1.0*/
+#tl_nav .icon-technology_icon {
+    font-size: large;
 }
+
+
+
+
+
+

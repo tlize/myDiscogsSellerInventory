@@ -32,8 +32,8 @@ require_once 'dal/users/selectAllUsers.php';
             $password = $user['password'];
             $register_date = $user['register_date'];
 
-            echo '<p>id # ' . $id . ' : <span style="font-weight: bold">' . $username . '</span>, registered on ' . $register_date;
-            if ($user['admin'] == 1) echo '<span style="font-weight: bold"> (admin)</span>';
+            echo '<p>id # ' . $id . ' : <span>' . $username . '</span>, registered on ' . $register_date;
+            if ($user['admin'] == 1) echo '<span> (admin)</span>';
             echo '</p>';
 
         }

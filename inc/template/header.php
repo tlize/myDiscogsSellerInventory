@@ -111,7 +111,7 @@ if (isset($_GET['newprice']) && isset($_GET['listingid'])) {
 ?>
 
 
-<nav class="navbar navbar-expand navbar-dark bg-dark row">
+<nav id="tl_nav" class="navbar navbar-expand navbar-dark bg-dark row">
 
     <div class="col-lg-1">
         <a id="home_logo" href="./index.php" title="Home"><i class="icon-technology_icon"></i></a>
