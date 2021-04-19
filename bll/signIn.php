@@ -42,10 +42,10 @@ function register()
                     echo '<p>Welcome ' . $username . ' !</p>';
                     echo '<p>Now please <a class="emLink" href="./login.php">login</a></p>';
                 } else {
-                    echo 'sorry, username already used !';
+                    echo '<br><br><h6>sorry, username already used !</h6>';
                 }
             } else {
-                echo 'please check your password confirm !';
+                echo '<br><br><h6>please check your password confirm !</h6>';
             }
         }
         $register_date = $_POST['register_date'];

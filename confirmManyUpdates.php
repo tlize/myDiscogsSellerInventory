@@ -18,23 +18,36 @@
     require_once './inc/template/header.php';
 
     if (isset($auth_user)) {
+
+        $soldItems = [];
+
         ?>
         <h4>Set items Sold :</h4>
         <?php
         $total = 0;
         foreach ($_POST['listing_id'] as $row) {
+
+            $item = [];
+
             $id = $row;
             require './dal/inventory/select/getDescription.php';
-            $total += $price;
 
-            if (isset($super_admin)) {
-                require './dal/temp/insertIntoTemp.php';
-            }
+
+            $item['id'] = $id;
+            $item['description'] = $description;
+            $item['price'] = $price;
+
+            $soldItems[] = $item;
+
+            $total += $price;
 
             ?>
             <h4><?php echo $description; ?></h4>
             <?php
         }
+
+        $_SESSION['soldItems'] = $soldItems;
+
         ?>
         <form action="updateManyItems.php" method="POST">
             <div class="row">
@@ -63,7 +76,7 @@
         </form>
         <?php
     } else {
-        echo 'sorry you can\'t !';
+        echo '<br><br><h6>sorry you can\'t !</h6>';
     }
 
     ?>

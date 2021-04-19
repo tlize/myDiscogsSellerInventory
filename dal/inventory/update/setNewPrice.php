@@ -15,5 +15,5 @@ $prep->bindValue(2, $listing_id);
 $prep->execute();
 
 
-echo 'Updated !';
+echo '<br><br><h6>Updated !</h6>';
 //require_once './index.php';echo 'newprice : ' . $price .' - listing_id : ' . $listing_id;

@@ -19,7 +19,7 @@ if (isset($super_admin)) {
     require_once './dal/getConnection.php';
     require_once('./dal/inventory/update/setOneItemSold.php');
 
-    echo 'Updated !';
+    echo '<br><br><h6>Updated !</h6>';
     require_once './index.php';
 }
 else {

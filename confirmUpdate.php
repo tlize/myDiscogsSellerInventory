@@ -53,7 +53,7 @@ require './dal/inventory/select/getDescription.php';
         </form>
         <?php
     } else {
-        echo 'sorry you can\'t !';
+        echo '<br><br><h6>sorry you can\'t !</h6>';
     }
 
     ?>

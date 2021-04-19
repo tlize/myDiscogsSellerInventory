@@ -23,4 +23,4 @@ $prep->bindValue(13, $_POST['sleeve_condition']);
 $prep->execute();
 
 require_once './index.php';
-echo '<p>One more item !</p>';
+echo '<br><br><h6>One more item !</h6>';

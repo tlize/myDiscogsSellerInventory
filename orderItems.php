@@ -56,7 +56,7 @@ $order_num = $_GET['order_num'];
         }
 
     } else {
-        echo 'sorry you can\'t !';
+        echo '<br><br><h6>sorry you can\'t !</h6>';
     }
 
     ?>

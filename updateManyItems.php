@@ -15,7 +15,6 @@
 
 // roughly the same as updateDatabase
 // a little more work to fetch items from the temp table
-echo 'ici';
 require 'inc/template/header.php';
 if (isset($super_admin)) {
 
@@ -34,26 +33,32 @@ if (isset($super_admin)) {
         }
     }
 
-    require_once './dal/temp/selectAllFromTemp.php';
+    if ($country != '') {
+        foreach ($_SESSION['soldItems'] as $item) {
+            $item_id = $item['id'];
+            $description = $item['description'];
+            $item_price = $item['price'];
 
-    foreach ($rowAll as $row) {
-        $item_id = $row['item_id'];
-        $item_price = $row['item_price'];
-        $description = $row['description'];
+            require './dal/inventory/update/setManyItemsSold.php';
+        }
 
+        require_once 'dal/orders/insertIntoOrders.php';
 
-        require './dal/inventory/update/setManyItemsSold.php';
+        unset($_SESSION['soldItems']);
     }
-    require_once 'dal/orders/insertIntoOrders.php';
-// temp table is empty again at the end of updating
-    require_once './dal/temp/deleteFromTemp.php';
+
+    else {
+        echo '<br><br><h6>Country not in listing, please check shipping address !</h6>';
+    }
+
     require_once 'index.php';
+
 } else {
     ?>
     <body>
     <br><br>
     <h5>sorry, no updating !</h5>
-    <h5>if you feel like buying these items, go to <a class="shopLink"
+    <h5>if you feel like buying these items, go to <a class="emLink"
                                                       href="https://www.discogs.com/seller/tlize/profile"
                                                       target="_blank">my Discogs shop</a></h5>
     </body>

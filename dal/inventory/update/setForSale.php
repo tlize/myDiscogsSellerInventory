@@ -10,5 +10,5 @@ $prep = $pdo->prepare($query);
 $prep->bindValue(1, $id);
 $prep->execute();
 
-echo 'Updated !';
+echo '<br><br><h6>Updated !</h6>';
 require_once './index.php';

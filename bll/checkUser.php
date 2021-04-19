@@ -7,7 +7,7 @@ require_once './dal/users/selectUserPassword.php';
 
 if ($arr == null) {
 
-    echo 'not registered !';
+    echo '<br><br><h6>not registered !</h6>';
 
 } else {
 
@@ -31,7 +31,7 @@ if ($arr == null) {
 
     } else {
 
-        echo 'forgot your password ?';
+        echo '<br><br><h6>forgot your password ?</h6>';
 
     }
 }

@@ -185,8 +185,8 @@ a.dropdown-item:hover {
     font-size: small;
 }
 
-/* specificity : 1.0.1*/
-#setSold table {
+/* specificity : 1.0.1, 1.0.1*/
+#setSold table, #newItem input {
     margin-bottom: 3.5em;
 }
 
